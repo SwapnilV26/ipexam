@@ -5,6 +5,7 @@ const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
+
 const client = net.createConnection({ port: 8000 }, () => {
     console.log("Client: I connected to server.");
     client.write("Client: Hello this is Client");
